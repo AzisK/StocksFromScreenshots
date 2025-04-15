@@ -12,8 +12,8 @@ def preprocess_image(file_bytes):
     # Load the image
     img_cv = cv2.imdecode(np.frombuffer(file_bytes, np.uint8), cv2.IMREAD_COLOR)
 
-    # Increase the size of the image
-    scale_percent = 80  # Increase size by 150%
+    # Decrease the size of the image
+    scale_percent = 80
     width = int(img_cv.shape[1] * scale_percent / 100)
     height = int(img_cv.shape[0] * scale_percent / 100)
     dim = (width, height)
