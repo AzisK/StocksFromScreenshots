@@ -1,0 +1,9 @@
+*.duckdb
+
+.venv*
+
+uploaded_screenshots/*
+sample_screenshot/*
+
+.idea/*
+__pycache__/*
